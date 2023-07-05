@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Management - LUMENAVE Limited</title>
+    <link rel="shortcut icon" href="../../../../images/lumenave_favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.1/dist/circle-progress.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../../style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg large-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"><img src="../../../../images/lumenave_logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-number="1">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-number="2">Solutions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-number="2">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-number="3">Support</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#"data-number="4">Learn</a>
+              </li>  
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Search">
+                <button class="btn" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg small-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="images/lumenave_logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Product and Services</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Home</a></li>
+                <li><a class="dropdown-item" href="#">Professional Services</a></li>
+                <li><a class="dropdown-item" href="#">Outsourcing and Managed Services</a></li>
+                <li><a class="dropdown-item" href="#">IT Financing</a></li>
+                <li><a class="dropdown-item" href="#">Bandwidth Provisioning</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Solutions</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Home</a></li>
+                <li><a class="dropdown-item" href="#">Information Security</a></li>
+                <li><a class="dropdown-item" href="#">Information Availability</a></li>
+                <li><a class="dropdown-item" href="#">Information Management</a></li>
+                <li><a class="dropdown-item" href="#">Information System</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Support</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Home</a></li>
+                <li><a class="dropdown-item" href="#">Support Option</a></li>
+                <li><a class="dropdown-item" href="#">Standard Support</a></li>
+                <li><a class="dropdown-item" href="#">Classic Support</a></li>
+                <li><a class="dropdown-item" href="#">Premium Support</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Learn</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search">
+            <button class="btn" type="button">Search</button>
+        </form>
+        </div>
+      </div>
+    </nav>
+    <div class="nav_menu">
+      <div class="menu" data-number="1">
+        <div class="close"><a href="#" class="btn nav-link"><i class="fa-solid fa-xmark"></i></a></div>
+        <div class="open-menu">
+          <ul>
+            <li>
+              <a href="../../services.html" style="color: #fe0000; font-weight: 600;">Services Home</a>
+            </li>
+            <li>
+              <a href="#" class="menu-link active-menu" data-number="11">Professional Services</a>
+            </li>
+            <li>
+              <a href="#" class="menu-link" data-number="12">Outsourcing and Managed Services</a>
+            </li>
+            <li>
+              <a href="#" class="menu-link" data-number="13">IT Financing</a>
+            </li>
+            <li>
+              <a href="#" class="menu-link" data-number="14">Bandwidth Provisioning</a>
+            </li>
+          </ul>
+          <div class="expanded-menu">
+            <div class="product" data-number="11">
+              <div class="menu-cards">
+                <div class="menu-card">
+                  <h5>Advisory Services</h5>
+                  <img src="../../../../inner-pages/images/advisory-services.jpg" alt="">
+                  <p>
+                    We provide the best advice for that IT Problem or for that next IT purchase.
+                  </p>
+                  <a href="../../professional-services.html">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="menu-card">
+                  <h5>Implementation Services</h5>
+                  <img src="../../../../inner-pages/images/implementation-servives.jpg" alt="">
+                  <p>Implement that initial business initiatives and values not matter the products used.</p>
+                  <a href="../../professional-services.html">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="product" data-number="12">
+              <div class="menu-cards">
+                <div class="menu-card">
+                  <h5>Outsourcing Services</h5>
+                  <img src="../../../../img_2023/bg-images/outsourcing-services.webp" alt="">
+                  <p>
+                    Our tech experts provide 24/7 enterprise tech support and critical case management.
+                  </p>
+                  <a href="../../outsourcing-services.html">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="menu-card">
+                  <h5>Managed Security Services</h5>
+                  <img src="../../../../img_2023/bg-images/managed-services.webp" alt="">
+                  <p>Have 24x7x365 monitoring and management of in-house security resources.</p>
+                  <a href="../../outsourcing-services.html">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="product" data-number="13">
+              <div class="menu-cards">
+                <div class="menu-card">
+                  <h5>IT Finance and Capital</h5>
+                  <img src="../../../../inner-pages/images/it-finance.webp" alt="">
+                  <p>
+                    Use the technology of need without much impact on overall budget.
+                  </p>
+                  <a href="../../it_financing.html">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="menu-card">
+                  <h5>IT Insurance</h5>
+                  <img src="../../../../inner-pages/images/it-insure.jpg" alt="">
+                  <p>Protect Investment in IT Hardware against theft, fire and factory damages.</p>
+                  <a href="../../it_financing.html">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="product" data-number="14">
+              <div class="menu-cards">
+                <div class="menu-card">
+                  <h5>Private Network Connection</h5>
+                  <img src="../../../../img_2023/bg-images/private-network.webp" alt="private-network">
+                  <p>Provide appropriate and high-quality connectivity for short, medium, and long distances.</p>
+                    <a href="../../bandwidth-provisioning.html">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="menu-card">
+                  <h5>Mobile Connectivity</h5>
+                  <img src="../../../../img_2023/bg-images/mobile-connect.webp" alt="mobile-connect">
+                  <p>Fast, Efficient and Dependable Connectivity Options for Today's Mobile Workforce.</p>
+                    <a href="../../bandwidth-provisioning.html">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="menu-card">
+                  <h5>Internet Services</h5>
+                  <img src="../../../../img_2023/bg-images/internet.webp" alt="internet">
+                  <p>At LUMENAVE, we ensure our customers get the right bandwidth to support their growing businesses. </p>
+                    <a href="../../bandwidth-provisioning.html">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu" data-number="2">
+        <div class="close"><button class="btn nav-link"><i class="fa-solid fa-xmark"></i></button></div>
+        <div class="open-menu">
+          <ul>
+            <li>
+              <a href="../../solution.html" style="color: #fe0000; font-weight: 600;">Solutions Home</a>
+            </li>
+            <li>
+              <a href="#" class="solution-link active-solution" data-number="15">Information Security</a>
+            </li>
+            <li>
+              <a href="#" class="solution-link" data-number="16">Information Availability</a>
+            </li>
+            <li>
+              <a href="#" class="solution-link" data-number="17">Information Management</a>
+            </li>
+            <li>
+              <a href="#" class="solution-link" data-number="18">Information Systems</a>
+            </li>
+          </ul>
+          <div class="expanded-menu">
+            <div class="solution" data-number="15">
+              <div class="menu-cards">
+                <div class="menu-card">
+                  <h5>Cloud Security</h5>
+                  <img src="../../../../img_2023/bg-images/cloud-security.webp" alt="cloud-security">
+                  <p>Ensure data integrity and protection on shared public or private resources.</p>
+                  <a href="cloud-security.html">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="menu-card">
+                  <h5>Data Protection</h5>
+                  <img src="../../../../img_2023/bg-images/data-protection.webp" alt="data-protection">
+                  <p>Identification, and classification of sensitive documents to prevent data leakage and reputational damage</p>
+                    <a href="data-protection.html">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="menu-card">
+                  <h5>Endpoint Security</h5>
+                  <img src="../../../../img_2023/bg-images/endpoint-security_1.webp" alt="endpoint-security_1">
+                  <p>LUMENAVE Endpoint Security solution enables organization choose the right endpoint security solution.</p>
+                    <a href="endpoint-security.html">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="menu-card more-card">
+                  <h5>Network Security</h5>
+                  <img src="../../../../img_2023/bg-images/network-security.webp" alt="network-security">
+                  <p>Protect your network from both internal and external security threats through our network security solution.</p>
+                    <a href="network-security.html">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="menu-card responsive-menu" style="display: none;">
+                  <h5>Network Security</h5>
+                  <img src="../../../../img_2023/bg-images/network-security.webp" alt="network-security">
+                  <p>Protect your network from both internal and external security threats through our network security solution.</p>
+                    <a href=".network-security.html">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+              </div>
+              <a href="#" class="more-link">Show More <i class="fa-solid fa-angle-down"></i></a>
+            </div>
+            <div class="solution" data-number="16">
+              <div class="menu-cards">
+                <div class="menu-card">
+                  <h5>Backup and Recovery</h5>
+                  <img src="../../../../img_2023/bg-images/backup-recovery.webp" alt="backup-recovery">
+                  <p>Protect and recover information in less time across a multitude of storage environments.</p>
+                    <a href="backup-recovery.html">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="menu-card">
+                  <h5>Business Continuity</h5>
+                  <img src="../../../../img_2023/bg-images/bcp.webp" alt="bcp">
+                  <p>Have a predictable and deterministic service recovery across all platforms through our business continuity plan.</p>
+                    <a href="business-continuity.html">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="menu-card">
+                  <h5>Information Governance</h5>
+                  <img src="../../../../img_2023/bg-images/info-governance.webp" alt="info-governance">
+                  <p>Shed light on the massive amounts of your unstructured content through our information governance.</p>
+                    <a href="information-governance.html">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="solution" data-number="17">
+              <div class="menu-cards">
+                <div class="menu-card">
+                  <h5>Enterprise Management</h5>
+                  <img src="../../../../inner-pages/images/enterprise-management.png" alt="">
+                  <p>
+                    Proactively identify and report on enterprise resource usage, faults, and performance.
+                  </p>
+                  <a href="enterprise-management.html">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="menu-card">
+                  <h5>Security Management</h5>
+                  <img src="../../../../inner-pages/images/security-management.jpg" alt="">
+                  <p>Identify and fix security fringes in applications, networks, and systems before it is too late</p>
+                  <a href="security-management.html">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="solution" data-number="18">
+              <div class="menu-cards">
+                <div class="menu-card">
+                  <h5>Infrastructure Solutions</h5>
+                  <img src="../../../../img_2023/bg-images/infrastructure-solutions.webp" alt="infrastructure-solutions">
+                  <p>Reliable infrastructure that ensure fast-paced data transport with improved network reponse time.</p>
+                  <a href="infrastructure-solution.html">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="menu-card">
+                  <h5>Network Solutions</h5>
+                  <img src="../../../../img_2023/bg-images/network-solution.webp" alt="network-solution">
+                  <p>Design, build, and maintain networks, unified Collaboration systems and wireless systems</p>
+                    <a href="networking-solution.html">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="menu-card">
+                  <h5>Enterprise System Solutions</h5>
+                  <img src="../../../../img_2023/bg-images/enterprise-systems.webp" alt="enterprise-systems">
+                  <p>Consolidate your multiple and separate identity management with Lumenave enterprise systems.</p>
+                  <a href="enterprise-system.html">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu" data-number="3">
+        <div class="close"><button class="btn nav-link"><i class="fa-solid fa-xmark"></i></button></div>
+        <div class="open-menu">
+          <ul>
+            <li>
+              <a href="../../support.html" style="color: #fe0000; font-weight: 600;">Support Home</a>
+            </li>
+            <li>
+              <a href="#" class="support-link active-support" data-number="IX">Support Options</a>
+            </li>
+            <li>
+              <a href="#" class="support-link" data-number="X">Standard Support</a>
+            </li>
+            <li>
+              <a href="#" class="support-link" data-number="XI">Classic Support</a>
+            </li>
+            <li>
+              <a href="#" class="support-link" data-number="XII">Premium Support</a>
+            </li>
+          </ul>
+          <div class="expanded-menu">
+            <div class="support" data-number="IX">
+              <div class="row">
+                <div class="col-6" style="display: block;">
+                  <p>
+                    LUMENAVE provides various cost-effective and convenient support options for every business. Our support options are designed and priced to meet the various needs of small, medium or large enterprises. Our Support options are simple, reliable and efficient ensuring businesses get the full benefits of using our products, services, and solutions.
+                  </p>
+                </div>
+                <div class="col-6" style="display: block;">
+                  <p>Our support offering includes but limited to:</p>
+                  <ul style="list-style:initial; border: none;">
+                    <li>Provides 24x7x365 assistance to customers on various Information Communication Technology (ICT) products and solutions. See Supported Solutions below.</li>
+                    <li>Available to customers that currently have installed products or solutions that are NOT optimally configured or been used in their organizations.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="support" data-number="X">
+              <div class="row">
+                <div class="col-6" style="display: block;">
+                  <p>
+                    Every product sold, services rendered, or solution deployed by LUMENAVE consultants, comes with three-month free standard support either done onsite, offsite, telephone calls, email, or by a logging a call.<br>In addition, our technology experts are always available to provide technical assistance and advice on several ways of optimizing the use of our products, services, and solutions.
+                  </p>
+                </div>
+                <div class="col-6" style="display: block;">
+                  <p>Standard support features:</p>
+                  <ul style="list-style:initial; border: none;">
+                    <li>Business Day support (Monday-Sunday, 6am-6pm GMT+1, excl. Major Holidays†)</li>
+                    <li>Monthly Reports and Recommendations on Capacity, Faults, Inventory, Availability. Security, Configuration change and Performance</li>
+                    <li>Proactive Support-Provide Alerts on Issues that May Affect Business Continuity</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="support" data-number="XI">
+              <div class="row">
+                <div class="col-6" style="display: block;">
+                  <p>LUMENAVE Classic Support is a world-class, reliable response support channel designed specifically for growing small and medium enterprise LUMENAVE Classic Support covers issues related to your use of LUMENAVE products, services, and solutions.</p>
+                </div>
+                <div class="col-6" style="display: block;">
+                  <p>Classic support features:</p>
+                  <ul style="list-style: inherit; border: none;">
+                    <li>Business Day support (Monday-Sunday, 6am-6pm GMT+1, excl. Major Holidays†)</li>
+                    <li>Monthly Reports and Recommendations on Capacity, Faults, Inventory, Availability. Security, Configuration change and Performance</li>
+                    <li>Quarterly Routine Maintenance of all Registered IT Systems in the Contract</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="support" data-number="XII">
+              <div class="row">
+                <div class="col-6" style="display: block;">
+                  <p>Our Premium Support is a one-on-one, world-class, fast-response support channel to help organization get better experience on the use of LUMENAVE products, services and solution.</p>
+                </div>
+                <div class="col-6" style="display: block;">
+                  <p>Premium support features:</p>
+                  <ul style="list-style: initial; border: none;">
+                    <li>Business Day support (Monday-Sunday, 6am-6pm GMT+1, excl. Major Holidays†)</li>
+                    <li>Monthly Reports and Recommendations on Capacity, Faults, Inventory, Availability. Security, Configuration change and Performance</li>
+                    <li>Quarterly Routine Maintenance of all Registered IT Systems in the Contract</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu" data-number="4">
+        <div class="close"><button class="btn nav-link"><i class="fa-solid fa-xmark"></i></button></div>
+        <div class="open-menu">
+          <ul>
+            <li>
+              <a href="../../learn.html" style="color: #fe0000; font-weight: 600;">Learn Home</a>
+            </li>
+            
+          </ul>
+          <div class="expanded-menu">
+            <div class="learn">
+              <div class="row">
+                <div class="col-4">
+                  <img src="../../../../images/digital-learning.jpg" alt="">
+                  <h5>Lumenave Digital Learning</h5>
+                  <p>Access our online product, technology, and certification courses, with video lectures and hands-on labs—anytime, anywhere.</p>
+                </div>
+                <div class="col-4">
+                  <img src="../../../../images/bootcamp.jpg" alt="">
+                  <h5>Training bootcamps</h5>
+                  <p>Taliored to your team's skills and goals, this intensive training program gets your team the skills they need to help your organization realize its potential.</p>
+                </div>
+                <div class="col-4">
+                  <img src="../../../../images/event.jpeg" alt="">
+                  <h5>Events</h5>
+                  <p>Join us to take advantage of the latest networking opportunities with Cisco customers, partners, employees, and subject-matter experts.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="home" style="background-image: url(../../inner-pages_2/images/sec-management.jpg); background-size: cover;">
+        <div class="header">
+            <div class="heading">
+                <h1>Security Management Solutions</h1>
+                <h5>Identify and Fix Security Fringes in Applications, Networks, and Systems before it is too late.</h5>
+                <a href="../../contact.html" class="btn">Get Started</a>
+            </div>
+        </div>
+    </section>
+    <section id="navigation">
+        <a href="#overview" class="active-nav info-link overview">Overview</a>
+        <a href="#solution_1" class="info-link solution_1">Security Management</a>
+    </section>
+    <section id="overview">
+        <div class="row">
+            <h1>Delivering the best digital experience is challenging</h1>
+            <p style="text-align: center;">Your application is your brand and flawless application experience is crucial. But complex application infrastructure needs the right tools to identify and remedy performance issues.</p>
+            <div class="col-4">
+                <div class="progressbar" data-animate="false">
+                    <div class="circle" data-percent="75">
+                      <div class="inner"></div>
+                      <p>75% technologists face more complexity and wrestle with overwhelming data noise</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="progressbar" data-animate="false">
+                    <div class="circle" data-percent="85">
+                      <div class="inner"></div>
+                      <p>85% are challenged to cut through data volumes to identify performance issue root causes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="progressbar" data-animate="false">
+                    <div class="circle" data-percent="96">
+                      <div class="inner"></div>
+                      <p>96% fear negative consequences from lack of insights and visibility</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="solution_1">
+      <div class="row">
+          <h3>Endpoint Management</h3>
+          <div class="col-4">
+              <img src="../images/endpoint-management.png" style="height: 200px; width: 300px;" alt="cloud security">
+          </div>
+          <div class="col-8">
+              <p>
+                Keeping up with modern and ever-evolving technologies bring a new dimension to the challenges that face today's security administrators. Also, the diversity in the use of these technologies on endpoints with varying operating systmes (OS) bring a whole new nightmare on curtailing security breaches in a timely manner.<br><br>
+                For many security administrators and many organizations that are keen in improving their security posture, having an effective endpoint management solution has become a top priority.<br><br>
+                LUMENAVE offers a wide range of Endpoint Management Solutions from leading original equipment manufacturers, design primarily to help organizations securely manage endpoint configuration, ensure PC OS conformity across the organization, and keep software applications up-to-date with latest releases, and patches, etc, across common platforms like Windows, Mac, Linux, UNIX, and virtual environments.<br><br>
+              </p>
+              <h5>Solution Benefits</h5>
+              <ul>
+                  <li>Manage thier assets and patches to reduce costs, complexity and increase productivity</li>
+                  <li>Reduce user downtime and increase IT efficiency through automated, repeatable processes</li>
+                  <li>Boost Compliance with better visibility into endpoint real-time inventory data-users, volumes, software components, etc.</li>
+                  <li>Securely manage endpoints with a unified solution</li>
+              </ul>
+          </div>
+      </div>
+    </section>
+    <section id="solution_1">
+      <div class="row">
+        <h3>Information Event Management</h3>
+        <div class="col-8">
+            <p>
+              In today's ever-increasing, and evasive threat landscape,organizations now deploys Security information and event management (SIEM) solutions not just for compliance reasons only but also to defend against malware and stealth security attacks wrapped with normal and useful traffic entering or leaving the enterprise.<br><br>
+              LUMENAVE SIEM solution portfolios help organizations collects logs from wide variety of network, system, and application resources from wide range of IT manufacturers. These logs are analysed, and correlated into information sets usable in taking smart, quick and concrete security actions against identified threats.<br><br>
+              Our SIEM solution portfolios from leading security manufacturers is comprehensive, holistic and scalable for organization to adopt based on cost, functionality required and time.<br><br>
+              In addition, our SIEM solution portfolios provide organizations with the performance, actionable inteligence, visibility, real-time analysis required to identify, understand and respond smartly to security threats and to achieve compliance reporting for regulatory purpose.
+            </p>
+        </div>
+        <div class="col-4">
+            <img src="../images/info-event-management.png" style="height: 200px; width: 300px; margin-left: 100px;" alt="cloud security">
+        </div>
+    </div>
+    </section>
+    <section id="solution_1">
+      <div class="row">
+        <h3>Vulnerability and Penetration Management</h3>
+        <div class="col-4">
+            <img src="../images/vul-pen-management.png" style="height: 200px; width: 300px;" alt="cloud security">
+        </div>
+        <div class="col-8">
+            <p>
+              Attackers will never stop exploiting vulnerabilities in IT resources-applications, systems and network, in orderto gain unauthorized access to useful information assets in an organization Morealso, vulnerabilities will never cease to exist due to human errors, faulty system design and implementations.<br><br>
+              Hence, the need for continuous check for vulnerabilities and correct possible exploits by various categories of attackers-script kiddies, experts, cannot be overemphasized.<br><br>
+              LUMENAVE's vulnerability and penetration management solution portfolios provide organizations the ability to perform self assessment on IT resources used in their environment either to determine the extent of vulnerabilities that exist, prevent these vulnerabilities from been exploited or for compliance purpose such as PCIDSS, ISO 27001, and others.
+            </p>
+        </div>
+    </div>
+    </section>
+    <section id="solution_1">
+      <div class="row">
+        <h3>Security Configuration Management Solution</h3>
+        <div class="col-8">
+            <p>
+              Organizations need to protect their critical IT resources from misconfigurations caused by human errors which may result to serious security breaches, and significant loss of revenue if not uncovered on time before attackers discover them. The security configuration management solution suite helps deliver visibility and analysis of complex network security policies across on premise and cloud networks.<br><br>
+              They help automate and simplify security operations including troubleshooting, auditing and risk analysis. They help security administrators optimize the configuration of firewalls, routers, web proxies and related network infrastructure to ensure security and compliance.
+            </p>
+        </div>
+        <div class="col-4">
+            <img src="../images/sec-config.png" style="height: 200px; width: 300px; margin-left: 100px;" alt="cloud security">
+        </div>
+    </div>
+    </section>
+    <section id="solution_1">
+      <div class="row">
+        <h3>Web Security Management Solution</h3>
+        <div class="col-4">
+            <img src="../images/web-sec-management.png" style="height: 200px; width: 300px;" alt="cloud security">
+        </div>
+        <div class="col-8">
+            <p>
+              Web applications are accessible 24/7 and control valuable data since they often have direct access to back-end data. In addition, web applications are often tailor-made therefore tested less than off-the-shelf software and are more likely to have undiscovered vulnerabilities.<br><br>
+              Hence, for organizations to ensure that they do not suffer security breaches that may cost them serious damages through the use of their website, they must take website security a priority by ensuring constant checks and correcting of evolving vulnerabilities as new pages are uploaded.<br><br>
+              The web security management solution suite consists of seamlessly integrated platforms designed to support the entire testing process of web application, from initial mapping and analysis of an application's attack surface, through to finding and exploiting security vulnerabilities.<br><br>
+              Organizations get full control of the entire process enabling them to automatically crawls and scans off-the-shelf and custom-built websites and web applications for SQL Injection, XSS, XXE, SSRF, Host Header Attacks, and multiple web vulnerabilities.
+            </p>
+        </div>
+    </div>
+    </section>
+    <section id="solution_1">
+      <div class="row">
+        <h3>Privileged Account Management</h3>
+        <div class="col-8">
+            <p>
+              When IT resources are compromised, attackers often seek to escalate privileges by searching for and taking control of privileged accounts to launch further attacks on compromised systems. It is no sunrising that every audit and compliance regulations and standards put emphasises on the importance to manage and monitor the use of such privileged accounts in an enterprise.<br><br>
+              Our solution suite covers the entire range of privileged management needs-from securing, controling, monitoring, to governance-with an end-to-end approach. The automated and policy-based workflows ensure appropriate access are given to critical resources at any given time when needed.<br><br>
+              In addition, the solution suites are proven to help organizations meet the strictest audit and IT compliance requirements by putting privileged account management controls in place to centrally secure, manage and monitor privileged accounts to protect critical information assets.
+            </p>
+        </div>
+        <div class="col-4">
+            <img src="../images/priv-acc-management.png" style="height: 150px; width: 300px; margin-left: 50px;" alt="cloud security">
+        </div>
+    </div>
+    </section>
+    <section id="solution_1">
+      <div class="row">
+        <h3>Database Security Management</h3>
+        <div class="col-4">
+            <img src="../images/database-security.png" style="height: 200px; width: 300px;" alt="cloud security">
+        </div>
+        <div class="col-8">
+            <p>
+              Databases contain the most valuable and exploitable data assets of an organization and are often prime targets in most security breaches either externally by hackers, or internally from privileged users.Often than not, organization do little or less to protect these valuable assets.<br><br>
+              LUMENAVE database security solution suites protect against external, internal, and intra-database threats. The solution suites give organization comprehensive security for databases without impacting the database performance.<br><br>
+              The suites have among other features: Database Activity Monitoring, Vulnerability Manager for Databases, Virtual Patching for Databases, support multiple deployment models-cloud, on-premises, and hybrid, provides advanced user management, analytics,reporting, and ease of administering from an intuitive console.
+            </p>
+        </div>
+    </div>
+    </section>
+    <section id="solution_1" class="pb-5">
+      <div class="row">
+        <h3>Audit Management</h3>
+        <div class="col-8">
+            <p>
+              The spread of sensitive files in an enterprise must be contained and properly managed not just for compliance purpose but also to ensure that such sensitive files do not get into the hands of unauthorized users internally or externally.<br><br>
+              Unauthorized access to such sensitive information may result to brand damage, strict sanctions, huge fines, erode customer confidence, and significant loss of revenue.<br><br>
+              LUMENAVE's data audit mangement solution suite provides organization the ability to rapidly discover, locate, retrieve, remediate and continuously monitor sensitive data at rest.<br><br>
+              It helps to determine the location, access, value and protection of sensitive data entities across network resources, such as PC, laptops, file severs and emails.
+            </p>
+        </div>
+        <div class="col-4">
+            <img src="../images/audit-management.png" style="height: 200px; width: 300px; margin-left: 100px;" alt="cloud security">
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-4 mt-5">
+            <div class="icon">
+                <img src="../images/benefit.png" alt="">
+            </div>
+            <h5>Security Information and Event Management</h5>
+            <ul>
+                <li>FortiSIEM Datashet</li>
+                <li>McAfee Enterprise Security Manager</li>
+            </ul>
+            <h5>Vulnerability and Penetration Management</h5>
+            <ul>
+              <li>Rapid7 Nexpose Vulnerability Management Datashet</li>
+              <li>Rapid7 MetaSploit Security Manager</li>
+              <li>Algosec Solution-Brochure</li>
+            </ul>
+        </div>
+        <div class="col-4 mt-5">
+            <div class="icon">
+                <img src="../images/brief.png" alt="">
+            </div>
+            <h5>Web Security Management</h5>
+            <ul>
+                <li>Accunetix Product Brochure</li>
+                <li>Burp Suite DataSheet</li>
+            </ul>
+            <h5>Privilege Account Security Solution</h5>
+            <ul>
+              <li>CyberArk Datashet</li>
+              <li>Controlling and Managing Privileged Access</li>
+              <li>Get ahead of your next security breach. Five steps to mitigate the risks of privileged accounts.</li>
+              <li>Dell Quest Privileged Account Management Datasheet</li>
+              <li>The CyberArk Digital Vault: Built for Security</li>
+              <li>PAM Global Survey Infographic Datasheet</li>
+            </ul>
+        </div>
+        <div class="col-4 mt-5">
+            <div class="icon">
+                <img src="../images/portfolio.png" alt="">
+            </div>
+            <h5>Database Security Management Solution</h5>
+            <ul>
+                <li>McAfee Database Activity Monitoring Solution Datashet</li>
+                <li>Imperva SecureSphere Data Security</li>
+                <li>Imperva SecureSphere Appliances</li>
+            </ul>
+            <h5>EndPoint Management Solutions</h5>
+            <ul>
+              <li>Symantec EndPoint Management</li>
+              <li>MicroFocus ZenWorks Management Suites</li>
+            </ul>
+            <h5>Audit Management Solution</h5>
+            <ul>
+              <li>PIXAlert Critical Data Auditor</li>
+              <li>Attackers Dictionary</li>
+            </ul>
+        </div>
+      </div>
+    </section>
+    <section id="call">
+      <div class="container-fluid">
+        <div class="cta">
+            <h3>Get Started</h3>
+            <h5>Explore how you can enhance application performance, optimize resources, and strengthen security to deliver exceptional digital experiences for customers and employees alike.</h5>
+            <a href="../../contact.html" class="btn"> contact Us</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+        <div class="large-screen">
+          <div class="footer-links">
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Career</a></li>
+              <li><a href="">Partners</a></li>
+            </ul>
+            <div class="media">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <ul>
+            <li><a href="">Feedback</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">Terms and Conditions</a></li>
+            <li><a href="">Privacy Statement</a></li>
+            <li><a href="">Cookies</a></li>
+            <li><a href="">Trademark</a></li>
+            <li><a href="">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="small-screen">
+          <div class="footer-link">
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Career</a></li>
+              <li><a href="">Partners</a></li>
+              <li><a href="">Privacy Statement</a></li>
+            </ul>
+            <ul>
+              <li><a href="">Feedback</a></li>
+              <li><a href="">Help</a></li>
+              <li><a href="">Terms and Conditions</a></li>
+              <li><a href="">Cookies</a></li>
+              <li><a href="">Trademark</a></li>
+              <li><a href="">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="media">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="copy">
+          <p>&#169 2023 LUMENAVE, Inc.</p>
+        </div>
+    </footer>
+
+
+    <script src="../../app.js"></script>
+</body>
+</html>

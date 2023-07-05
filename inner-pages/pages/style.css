@@ -1,0 +1,973 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  box-shadow: 2px 2px 2px lightgray;
+  height: 10vh;
+}
+nav .container-fluid {
+  padding: 10px 100px;
+}
+nav .container-fluid .navbar-brand img {
+  width: 200px;
+  height: 50px;
+}
+nav .container-fluid .collapse .navbar-nav {
+  width: 65%;
+}
+nav .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+  transition: all 0.4s ease-in-out;
+}
+nav .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
+  text-decoration: underline;
+}
+nav .container-fluid .collapse .navbar-nav .nav-item:not(:first-child) {
+  margin-left: 20px;
+}
+nav .container-fluid .collapse form .btn {
+  background-color: #fe0000;
+  color: #fff;
+}
+
+#card {
+  width: 100%;
+  height: 100vh;
+  padding-top: 50px;
+}
+#card h3 {
+  color: #fe0000;
+  text-align: center;
+}
+#card .row {
+  padding: 100px;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+#card .row .col-9 {
+  overflow: hidden;
+}
+#card .row .col-9 .details:not(:nth-child(1)) {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+#card .row .col-9 .swiper {
+  width: 100%;
+}
+#card .row .col-9 .swiper .swiper-wrapper {
+  padding-bottom: 50px;
+}
+#card .row .col-9 .swiper .swiper-wrapper .swiper-slide {
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  filter: blur(10px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+}
+#card .row .col-9 .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 50%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+#card .row .col-9 .swiper .swiper-wrapper .swiper-slide .write-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  padding: 20px;
+}
+#card .row .col-9 .swiper .swiper-wrapper .swiper-slide .write-up h5 {
+  color: #fe0000;
+}
+#card .row .col-9 .swiper .swiper-wrapper .swiper-slide .write-up p {
+  text-align: center;
+}
+#card .row .col-9 .swiper .swiper-wrapper .swiper-slide-active {
+  filter: blur(0px);
+}
+#card .row .col-3 {
+  height: 60%;
+}
+#card .row .col-3 .btn {
+  padding: 0;
+  font-size: 20px;
+  margin-top: 25px;
+  border-radius: 0;
+  padding: 0 10px;
+}
+#card .row .col-3 .active-btn {
+  border-left: 4px solid red;
+}
+
+#responsive-card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+}
+#responsive-card h3 {
+  text-align: center;
+}
+#responsive-card .heading {
+  width: 90%;
+  height: 50px;
+  padding: 0;
+  background-color: rgb(231, 231, 231);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#responsive-card .heading .btn {
+  padding: 0;
+  font-size: 20px;
+  border-radius: 0;
+  padding: 0 10px;
+}
+#responsive-card .heading .active-btn {
+  border-left: 4px solid red;
+}
+#responsive-card .heading .active-btn .fa-angle-down {
+  rotate: -180deg;
+  transition: 0.4s all ease-in-out;
+}
+#responsive-card .body {
+  overflow: hidden;
+  margin-top: 10px;
+  width: 90%;
+}
+#responsive-card .body:not(:nth-child(1)) .details {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+#responsive-card .body .swiper {
+  width: 100%;
+}
+#responsive-card .body .swiper .swiper-wrapper {
+  padding-bottom: 50px;
+}
+#responsive-card .body .swiper .swiper-wrapper .swiper-slide {
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  filter: blur(10px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+}
+#responsive-card .body .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 50%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+#responsive-card .body .swiper .swiper-wrapper .swiper-slide .write-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  padding: 20px;
+}
+#responsive-card .body .swiper .swiper-wrapper .swiper-slide .write-up h5 {
+  color: #fe0000;
+}
+#responsive-card .body .swiper .swiper-wrapper .swiper-slide .write-up p {
+  text-align: center;
+}
+#responsive-card .body .swiper .swiper-wrapper .swiper-slide-active {
+  filter: blur(0px);
+}
+
+/***************Outer Pages*****/
+#solution-home .header, #service-home .header {
+  background-image: url(../images/bg-4.png);
+  background-size: cover;
+}
+
+#contact-home .header {
+  background-image: url(../../img_2023/bg-images/contact-us.webp);
+  background-position: bottom !important;
+  background-size: cover;
+}
+#contact-home .row .col-6 .our_contact {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(244, 244, 244);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 100px;
+}
+#contact-home .row .col-6 .our_contact .contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+#contact-home .row .col-6 .our_contact .social .icons {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+#contact-home .row .col-6 form .btn {
+  width: 100%;
+}
+
+#solution-home, #service-home, #contact-home {
+  width: 100%;
+  height: auto;
+  background-color: rgb(248, 247, 247);
+}
+#solution-home .header, #service-home .header, #contact-home .header {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#solution-home .header::after, #service-home .header::after, #contact-home .header::after {
+  content: "";
+  background-color: #111;
+  opacity: 0.7;
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  top: 0;
+}
+#solution-home .header h1, #solution-home .header h5, #service-home .header h1, #service-home .header h5, #contact-home .header h1, #contact-home .header h5 {
+  color: #fff;
+  z-index: 1;
+  position: relative;
+}
+#solution-home .row, #service-home .row, #contact-home .row {
+  padding: 10px 200px;
+  width: 100%;
+}
+#solution-home .row .heading, #service-home .row .heading, #contact-home .row .heading {
+  padding: 100px 0;
+}
+
+/******** Inner Pages*************/
+#info-sec-home, #info-ava-home, #info-man-home, #info-sys-home {
+  width: 100%;
+  height: 90vh;
+}
+#info-sec-home .header, #info-ava-home .header, #info-man-home .header, #info-sys-home .header {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#info-sec-home .header::after, #info-ava-home .header::after, #info-man-home .header::after, #info-sys-home .header::after {
+  content: "";
+  height: 90vh;
+  width: 100%;
+  top: 10vh;
+  background-color: #111;
+  opacity: 0.5;
+  position: absolute;
+}
+#info-sec-home .header .heading, #info-ava-home .header .heading, #info-man-home .header .heading, #info-sys-home .header .heading {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+#info-sec-home .header .heading h1, #info-ava-home .header .heading h1, #info-man-home .header .heading h1, #info-sys-home .header .heading h1 {
+  font-weight: bolder;
+  font-size: xxx-large;
+}
+#info-sec-home .header .heading .btn, #info-ava-home .header .heading .btn, #info-man-home .header .heading .btn, #info-sys-home .header .heading .btn {
+  background-color: #fe0000;
+  color: #fff;
+}
+
+#info-sec-home {
+  background-image: url(../../img_2023/bg-images/server__bg.webp);
+  background-size: cover;
+}
+
+#info-ava-home {
+  background-image: url(../images/info-availability.webp);
+  background-size: cover;
+  background-position: bottom;
+}
+
+#info-man-home {
+  background-image: url(../images/info-management.jpg);
+}
+
+#info-sys-home {
+  background-image: url(../images/information-system.jpeg);
+}
+
+#navigation {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+  background-color: #fff;
+  box-shadow: 1px 1px 3px lightgray;
+  position: sticky;
+  margin-bottom: 10px;
+  top: 0;
+}
+#navigation a {
+  margin-left: 50px;
+  text-decoration: none;
+  color: #111;
+  padding: 10px 0;
+}
+#navigation .active-nav {
+  border-bottom: #fe0000 3px solid;
+}
+
+#cloud-security, #data-protection, #endpoint-security, #network-security, #overview {
+  width: 100%;
+  height: auto;
+  padding: 100px 150px 0 150px;
+}
+#cloud-security .row h3, #cloud-security .row h1, #data-protection .row h3, #data-protection .row h1, #endpoint-security .row h3, #endpoint-security .row h1, #network-security .row h3, #network-security .row h1, #overview .row h3, #overview .row h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#cloud-security .row .col-6 #video, #data-protection .row .col-6 #video, #endpoint-security .row .col-6 #video, #network-security .row .col-6 #video, #overview .row .col-6 #video {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+}
+#cloud-security .row .col-3 img, #data-protection .row .col-3 img, #endpoint-security .row .col-3 img, #network-security .row .col-3 img, #overview .row .col-3 img {
+  width: 100%;
+  height: 50%;
+}
+#cloud-security .row .col-4 img, #data-protection .row .col-4 img, #endpoint-security .row .col-4 img, #network-security .row .col-4 img, #overview .row .col-4 img {
+  width: 100%;
+  height: 100%;
+}
+#cloud-security .row .col-4 .progressbar, #data-protection .row .col-4 .progressbar, #endpoint-security .row .col-4 .progressbar, #network-security .row .col-4 .progressbar, #overview .row .col-4 .progressbar {
+  width: 90%;
+}
+#cloud-security .row .col-4 .progressbar .circle, #data-protection .row .col-4 .progressbar .circle, #endpoint-security .row .col-4 .progressbar .circle, #network-security .row .col-4 .progressbar .circle, #overview .row .col-4 .progressbar .circle {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  z-index: -1;
+}
+#cloud-security .row .col-4 .progressbar .circle .inner, #data-protection .row .col-4 .progressbar .circle .inner, #endpoint-security .row .col-4 .progressbar .circle .inner, #network-security .row .col-4 .progressbar .circle .inner, #overview .row .col-4 .progressbar .circle .inner {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+}
+#cloud-security .row .col-8 a, #data-protection .row .col-8 a, #endpoint-security .row .col-8 a, #network-security .row .col-8 a, #overview .row .col-8 a {
+  text-decoration: none;
+  color: #fe0000;
+}
+#cloud-security .row .col-8 a:hover, #data-protection .row .col-8 a:hover, #endpoint-security .row .col-8 a:hover, #network-security .row .col-8 a:hover, #overview .row .col-8 a:hover {
+  text-decoration: underline;
+}
+
+#backup-recovery, #business-cont, #info-gov, #enterprise-system {
+  width: 100%;
+  height: auto;
+  padding: 50px 150px 50px 150px;
+}
+#backup-recovery .row h3, #backup-recovery .row h1, #business-cont .row h3, #business-cont .row h1, #info-gov .row h3, #info-gov .row h1, #enterprise-system .row h3, #enterprise-system .row h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#backup-recovery .row .col-4 img, #business-cont .row .col-4 img, #info-gov .row .col-4 img, #enterprise-system .row .col-4 img {
+  width: 100%;
+  height: 100%;
+}
+#backup-recovery .row .col-4 .progressbar, #business-cont .row .col-4 .progressbar, #info-gov .row .col-4 .progressbar, #enterprise-system .row .col-4 .progressbar {
+  width: 90%;
+}
+#backup-recovery .row .col-4 .progressbar .circle, #business-cont .row .col-4 .progressbar .circle, #info-gov .row .col-4 .progressbar .circle, #enterprise-system .row .col-4 .progressbar .circle {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  z-index: -1;
+}
+#backup-recovery .row .col-4 .progressbar .circle .inner, #business-cont .row .col-4 .progressbar .circle .inner, #info-gov .row .col-4 .progressbar .circle .inner, #enterprise-system .row .col-4 .progressbar .circle .inner {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+}
+#backup-recovery .row .col-8 a, #business-cont .row .col-8 a, #info-gov .row .col-8 a, #enterprise-system .row .col-8 a {
+  text-decoration: none;
+  color: #fe0000;
+}
+#backup-recovery .row .col-8 a:hover, #business-cont .row .col-8 a:hover, #info-gov .row .col-8 a:hover, #enterprise-system .row .col-8 a:hover {
+  text-decoration: underline;
+}
+
+#security-management, #enterprise-management, #infra-solution, #networking-solution {
+  width: 100%;
+  height: auto;
+  padding: 50px 150px 50px 150px;
+}
+#security-management .row h3, #security-management .row h1, #enterprise-management .row h3, #enterprise-management .row h1, #infra-solution .row h3, #infra-solution .row h1, #networking-solution .row h3, #networking-solution .row h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#security-management .row .col-4 img, #enterprise-management .row .col-4 img, #infra-solution .row .col-4 img, #networking-solution .row .col-4 img {
+  width: 100%;
+  height: 100%;
+}
+#security-management .row .col-4 .progressbar, #enterprise-management .row .col-4 .progressbar, #infra-solution .row .col-4 .progressbar, #networking-solution .row .col-4 .progressbar {
+  width: 90%;
+}
+#security-management .row .col-4 .progressbar .circle, #enterprise-management .row .col-4 .progressbar .circle, #infra-solution .row .col-4 .progressbar .circle, #networking-solution .row .col-4 .progressbar .circle {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  z-index: -1;
+}
+#security-management .row .col-4 .progressbar .circle .inner, #enterprise-management .row .col-4 .progressbar .circle .inner, #infra-solution .row .col-4 .progressbar .circle .inner, #networking-solution .row .col-4 .progressbar .circle .inner {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+}
+#security-management .row .col-8 a, #enterprise-management .row .col-8 a, #infra-solution .row .col-8 a, #networking-solution .row .col-8 a {
+  text-decoration: none;
+  color: #fe0000;
+}
+#security-management .row .col-8 a:hover, #enterprise-management .row .col-8 a:hover, #infra-solution .row .col-8 a:hover, #networking-solution .row .col-8 a:hover {
+  text-decoration: underline;
+}
+
+#pro-serve-home, #outsource-home, #it-finance-home, #bandwidth-home {
+  width: 100%;
+  height: 90vh;
+}
+#pro-serve-home .header, #outsource-home .header, #it-finance-home .header, #bandwidth-home .header {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#pro-serve-home .header::after, #outsource-home .header::after, #it-finance-home .header::after, #bandwidth-home .header::after {
+  content: "";
+  height: 90vh;
+  width: 100%;
+  background-color: #111;
+  opacity: 0.5;
+  position: absolute;
+}
+#pro-serve-home .header .heading, #outsource-home .header .heading, #it-finance-home .header .heading, #bandwidth-home .header .heading {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+#pro-serve-home .header .heading h1, #outsource-home .header .heading h1, #it-finance-home .header .heading h1, #bandwidth-home .header .heading h1 {
+  font-weight: bolder;
+  font-size: xxx-large;
+}
+#pro-serve-home .header .heading .btn, #outsource-home .header .heading .btn, #it-finance-home .header .heading .btn, #bandwidth-home .header .heading .btn {
+  background-color: #fe0000;
+  color: #fff;
+}
+
+#pro-serve-home {
+  background-image: url(../images/pro-services.jpg);
+  background-position: 50%;
+}
+
+#outsource-home {
+  background-image: url(../images/outsourcing-services_2.jpg);
+  background-size: cover;
+}
+
+#it-finance-home {
+  background-image: url(../images/it-finance.webp);
+  background-size: cover;
+}
+
+#bandwidth-home {
+  background-image: url(../images/bandwith.webp);
+  background-size: cover;
+}
+
+#advisory-services, #implementation-services, #outsourcing-services, #managed-services {
+  width: 100%;
+  height: auto;
+  padding: 100px 150px 0 150px;
+}
+#advisory-services .row h3, #advisory-services .row h1, #implementation-services .row h3, #implementation-services .row h1, #outsourcing-services .row h3, #outsourcing-services .row h1, #managed-services .row h3, #managed-services .row h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#advisory-services .row .col-4 img, #implementation-services .row .col-4 img, #outsourcing-services .row .col-4 img, #managed-services .row .col-4 img {
+  width: 100%;
+  height: 100%;
+}
+#advisory-services .row .col-4 .progressbar, #implementation-services .row .col-4 .progressbar, #outsourcing-services .row .col-4 .progressbar, #managed-services .row .col-4 .progressbar {
+  width: 90%;
+}
+#advisory-services .row .col-4 .progressbar .circle, #implementation-services .row .col-4 .progressbar .circle, #outsourcing-services .row .col-4 .progressbar .circle, #managed-services .row .col-4 .progressbar .circle {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  z-index: -1;
+}
+#advisory-services .row .col-4 .progressbar .circle .inner, #implementation-services .row .col-4 .progressbar .circle .inner, #outsourcing-services .row .col-4 .progressbar .circle .inner, #managed-services .row .col-4 .progressbar .circle .inner {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+}
+#advisory-services .row .col-8 a, #implementation-services .row .col-8 a, #outsourcing-services .row .col-8 a, #managed-services .row .col-8 a {
+  text-decoration: none;
+  color: #fe0000;
+}
+#advisory-services .row .col-8 a:hover, #implementation-services .row .col-8 a:hover, #outsourcing-services .row .col-8 a:hover, #managed-services .row .col-8 a:hover {
+  text-decoration: underline;
+}
+
+#it-finance, #it-insure, #private-network, #mobile-network, #internet-services {
+  width: 100%;
+  height: auto;
+  padding: 50px 150px 50px 150px;
+}
+#it-finance .row h3, #it-finance .row h1, #it-insure .row h3, #it-insure .row h1, #private-network .row h3, #private-network .row h1, #mobile-network .row h3, #mobile-network .row h1, #internet-services .row h3, #internet-services .row h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#it-finance .row .col-4 img, #it-insure .row .col-4 img, #private-network .row .col-4 img, #mobile-network .row .col-4 img, #internet-services .row .col-4 img {
+  width: 100%;
+  height: 100%;
+}
+#it-finance .row .col-4 .progressbar, #it-insure .row .col-4 .progressbar, #private-network .row .col-4 .progressbar, #mobile-network .row .col-4 .progressbar, #internet-services .row .col-4 .progressbar {
+  width: 90%;
+}
+#it-finance .row .col-4 .progressbar .circle, #it-insure .row .col-4 .progressbar .circle, #private-network .row .col-4 .progressbar .circle, #mobile-network .row .col-4 .progressbar .circle, #internet-services .row .col-4 .progressbar .circle {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  z-index: -1;
+}
+#it-finance .row .col-4 .progressbar .circle .inner, #it-insure .row .col-4 .progressbar .circle .inner, #private-network .row .col-4 .progressbar .circle .inner, #mobile-network .row .col-4 .progressbar .circle .inner, #internet-services .row .col-4 .progressbar .circle .inner {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+}
+#it-finance .row .col-8 a, #it-insure .row .col-8 a, #private-network .row .col-8 a, #mobile-network .row .col-8 a, #internet-services .row .col-8 a {
+  text-decoration: none;
+  color: #fe0000;
+}
+#it-finance .row .col-8 a:hover, #it-insure .row .col-8 a:hover, #private-network .row .col-8 a:hover, #mobile-network .row .col-8 a:hover, #internet-services .row .col-8 a:hover {
+  text-decoration: underline;
+}
+
+#call {
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/cta_2.jpg);
+  background-position: 50%;
+  background-size: cover;
+  position: relative;
+}
+#call::after {
+  content: "";
+  width: 100%;
+  height: 300px;
+  background-color: #111;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+}
+#call .container-fluid {
+  z-index: 1;
+  position: relative;
+  color: #fff;
+  width: 100%;
+  padding: 50px 100px;
+}
+#call .container-fluid .cta {
+  padding-right: 80px;
+  padding-top: 60px;
+}
+#call .container-fluid .cta h3, #call .container-fluid .cta h5 {
+  color: #fff;
+}
+#call .container-fluid .cta .btn {
+  background-color: #fe0000;
+  color: #fff;
+}
+
+#cta {
+  margin-top: 30px;
+  width: 100%;
+  height: 40vh;
+  background-image: url(../images/cta.jpg);
+  background-size: cover;
+  position: relative;
+}
+#cta::after {
+  content: "";
+  width: 100%;
+  height: 40vh;
+  position: absolute;
+  background-color: #111;
+  opacity: 0.7;
+  left: 0;
+  top: 0;
+}
+#cta .cta-details {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#cta .cta-details h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#cta .cta-details .btn {
+  background-color: #fe0000;
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: rgb(231, 231, 231);
+  padding: 10px 120px 0 120px;
+}
+footer .large-screen .footer-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: #b1b1b1 1px solid;
+  padding-bottom: 50px;
+}
+footer .large-screen .footer-links ul {
+  display: flex;
+  list-style: none;
+}
+footer .large-screen .footer-links ul li:not(:nth-child(1)) {
+  margin-left: 30px;
+}
+footer .large-screen .footer-links ul li a {
+  color: #20273b;
+  text-decoration: none;
+}
+footer .large-screen .footer-links ul li a:hover {
+  text-decoration: underline;
+}
+footer .large-screen .footer-links .media {
+  margin-left: 80%;
+}
+footer .large-screen ul {
+  display: flex;
+  list-style: none;
+  margin-top: 10px;
+}
+footer .large-screen ul li:not(:nth-child(1)) {
+  margin-left: 30px;
+}
+footer .large-screen ul li a {
+  color: #20273b;
+  text-decoration: none;
+}
+footer .large-screen ul li a:hover {
+  text-decoration: underline;
+}
+footer .small-screen {
+  display: none;
+}
+footer .small-screen .footer-link {
+  border-bottom: #b1b1b1 1px solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .small-screen .footer-link ul {
+  list-style: none;
+}
+footer .small-screen .footer-link ul li a {
+  color: #20273b;
+  text-decoration: none;
+}
+footer .small-screen .footer-link ul li a:hover {
+  text-decoration: underline;
+}
+footer .small-screen .media {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .small-screen .media .fa-brands {
+  margin-left: 10px;
+}
+footer .copy {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+footer .copy p {
+  font-size: 11px;
+}
+
+@media (min-width: 1421px) {
+  body {
+    background-color: #F2F2F2;
+  }
+  #card, #service-home, #cta, #call, footer, nav, #solution-home, .nav_menu, #contact-home {
+    background-color: #fff;
+    width: 1620px !important;
+    margin: 0 auto;
+  }
+  #card .header::after, #service-home .header::after, #cta .header::after, #call .header::after, footer .header::after, nav .header::after, #solution-home .header::after, .nav_menu .header::after, #contact-home .header::after {
+    width: 1620px;
+  }
+  #card .row {
+    padding: 100px !important;
+  }
+  #service-home .header, #solution-home .header, #contact-home .header {
+    height: auto;
+    padding: 100px;
+    position: relative;
+    background-position: center;
+  }
+  #service-home .header::after, #solution-home .header::after, #contact-home .header::after {
+    height: 100%;
+    top: 0;
+  }
+  #info-sec-home, #info-ava-home, #info-man-home, #info-sys-home, #pro-serve-home, #outsource-home, #it-finance-home, #bandwidth-home, #navigation, #overview {
+    width: 1620px;
+    margin: 0 auto;
+  }
+  #info-sec-home .header::after, #info-ava-home .header::after, #info-man-home .header::after, #info-sys-home .header::after, #pro-serve-home .header::after, #outsource-home .header::after, #it-finance-home .header::after, #bandwidth-home .header::after, #navigation .header::after, #overview .header::after {
+    width: 1620px;
+  }
+  #cloud-security, #data-protection, #endpoint-security, #network-security, #security-management, #enterprise-management, #infra-solution, #networking-solution, #backup-recovery, #business-cont, #info-gov, #enterprise-system, #advisory-services, #implementation-services, #outsourcing-services, #managed-services, #it-finance, #it-insure, #private-network, #mobile-network, #internet-services {
+    width: 1620px;
+    background-color: #fff;
+    margin: 0 auto;
+  }
+  #overview {
+    box-shadow: 1px 0 5px lightgray;
+  }
+}
+@media (min-width: 1025px) {
+  #card {
+    height: auto;
+  }
+  #card .row {
+    padding: 20px;
+  }
+  #card .row .col-3 {
+    padding: 0 3px;
+  }
+  #cta, #call {
+    height: auto;
+  }
+  #cta::after, #call::after {
+    height: 100%;
+  }
+  #cta .cta-details, #call .cta-details {
+    height: 20vh;
+  }
+}
+@media (max-width: 1024px) {
+  nav .container-fluid {
+    padding: 10px 20px;
+  }
+  #service-home .header, #solution-home .header {
+    height: 25vh;
+  }
+  #service-home .header::after, #solution-home .header::after {
+    height: 25vh;
+  }
+  #info-sec-home, #info-ava-home, #info-man-home, #info-sys-home, #pro-serve-home, #outsource-home, #it-finance-home, #bandwidth-home {
+    height: 50vh;
+  }
+  #info-sec-home .header, #info-ava-home .header, #info-man-home .header, #info-sys-home .header, #pro-serve-home .header, #outsource-home .header, #it-finance-home .header, #bandwidth-home .header {
+    height: 50vh;
+  }
+  #info-sec-home .header::after, #info-ava-home .header::after, #info-man-home .header::after, #info-sys-home .header::after, #pro-serve-home .header::after, #outsource-home .header::after, #it-finance-home .header::after, #bandwidth-home .header::after {
+    height: 50vh;
+  }
+  #cloud-security, #data-protection, #endpoint-security, #network-security, #security-management, #enterprise-management, #infra-solution, #networking-solution, #backup-recovery, #business-cont, #info-gov, #enterprise-system, #overview {
+    padding: 20px;
+  }
+  #advisory-services, #implementation-services, #outsourcing-services, #managed-services, #it-finance, #it-insure, #private-network, #mobile-network, #internet-services {
+    padding: 20px;
+  }
+  #card {
+    height: auto;
+  }
+  #card .row {
+    padding: 20px;
+  }
+  #card .col-3 {
+    justify-content: start !important;
+  }
+  #card .col-3 .btn {
+    padding: 0 3px !important;
+  }
+  #cta, #call {
+    height: auto;
+  }
+  #cta::after, #call::after {
+    height: 100%;
+  }
+  #cta .cta-details, #call .cta-details {
+    height: 20vh;
+  }
+  footer {
+    padding: 10px 20px 0 20px;
+  }
+}
+@media (max-width: 834px) {
+  #service-home .row, #solution-home .row {
+    flex-direction: column-reverse;
+  }
+  #service-home .row .col-6, #solution-home .row .col-6 {
+    width: 100%;
+  }
+  #service-home .row .col-6 img, #solution-home .row .col-6 img {
+    width: 100%;
+    height: 100%;
+  }
+  #service-home .row .heading, #solution-home .row .heading {
+    padding: 0;
+  }
+  #service-home .row .heading h1, #solution-home .row .heading h1 {
+    text-align: center;
+  }
+  #overview {
+    margin-top: 50px;
+  }
+  #cloud-security .row .col-4, #cloud-security .row .col-8, #data-protection .row .col-4, #data-protection .row .col-8, #endpoint-security .row .col-4, #endpoint-security .row .col-8, #network-security .row .col-4, #network-security .row .col-8, #security-management .row .col-4, #security-management .row .col-8, #enterprise-management .row .col-4, #enterprise-management .row .col-8, #infra-solution .row .col-4, #infra-solution .row .col-8, #networking-solution .row .col-4, #networking-solution .row .col-8, #backup-recovery .row .col-4, #backup-recovery .row .col-8, #business-cont .row .col-4, #business-cont .row .col-8, #info-gov .row .col-4, #info-gov .row .col-8, #enterprise-system .row .col-4, #enterprise-system .row .col-8 {
+    width: 100%;
+  }
+  #advisory-services .row .col-4, #advisory-services .row .col-8, #implementation-services .row .col-4, #implementation-services .row .col-8, #outsourcing-services .row .col-4, #outsourcing-services .row .col-8, #managed-services .row .col-4, #managed-services .row .col-8, #it-finance .row .col-4, #it-finance .row .col-8, #it-insure .row .col-4, #it-insure .row .col-8, #private-network .row .col-4, #private-network .row .col-8, #mobile-network .row .col-4, #mobile-network .row .col-8, #internet-services .row .col-4, #internet-services .row .col-8 {
+    width: 100%;
+  }
+  #card {
+    max-height: 0;
+    overflow: hidden;
+  }
+  #responsive-card {
+    max-height: 100vh !important;
+  }
+  footer {
+    padding: 10px;
+  }
+  footer .large-screen {
+    display: none;
+  }
+  footer .small-screen {
+    display: block;
+  }
+}
+@media (max-width: 800px) {
+  #navigation {
+    display: none;
+  }
+  #overview {
+    margin-top: 50px;
+  }
+  #call .row .cta {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 688px) {
+  #service-home .row, #solution-home .row {
+    padding: 10px 30px;
+  }
+  #cta {
+    height: auto;
+  }
+  #cta::after {
+    height: 100%;
+  }
+  #cta .cta-details {
+    padding: 20px;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  #service-home .header, #solution-home .header {
+    padding: 20px;
+  }
+  #overview .row {
+    padding: 20px 0;
+  }
+  #overview .row .col-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  #call .row {
+    padding: 10px;
+  }
+  #call .row .col-6 {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
