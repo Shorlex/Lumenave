@@ -57,9 +57,11 @@ nav .container-fluid .collapse form .btn {
   z-index: 1;
   color: #fff;
 }
-#home .header .heading h1 {
-  font-weight: bolder;
-  font-size: xxx-large;
+#home .header .heading h2 {
+  font-size: 5.2rem;
+}
+#home .header .heading h5 {
+  font-size: 1.5rem;
 }
 #home .header .heading .btn {
   background-color: #fe0000;
@@ -127,10 +129,6 @@ nav .container-fluid .collapse form .btn {
   width: 100%;
   height: auto;
   padding: 100px 150px 0 150px;
-}
-#solution_1 .row h3, #solution_1 .row h1, #solution_2 .row h3, #solution_2 .row h1, #solution_3 .row h3, #solution_3 .row h1, #solution_4 .row h3, #solution_4 .row h1 {
-  text-align: center;
-  margin-bottom: 30px;
 }
 #solution_1 .row .col-8 a, #solution_2 .row .col-8 a, #solution_3 .row .col-8 a, #solution_4 .row .col-8 a {
   text-decoration: none;
@@ -210,14 +208,16 @@ nav .container-fluid .collapse form .btn {
   position: relative;
   color: #fff;
   width: 100%;
-  padding: 50px 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#call .container-fluid .cta {
-  padding-right: 80px;
-  padding-top: 60px;
+#call .container-fluid .cta h3 {
+  font-size: 3rem;
 }
-#call .container-fluid .cta h3, #call .container-fluid .cta h5 {
-  color: #fff;
+#call .container-fluid .cta h5 {
+  font-size: 2rem;
 }
 #call .container-fluid .cta .btn {
   background-color: #fe0000;

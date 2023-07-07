@@ -62,9 +62,11 @@ nav{
             position: relative;
             z-index: 1;
             color: #fff;
-            h1{
-                font-weight: bolder;
-                font-size: xxx-large;
+            h2{
+                font-size: 5.2rem;
+            }
+            h5{
+                font-size: 1.5rem;
             }
             .btn{
                 background-color: #fe0000;
@@ -140,10 +142,10 @@ nav{
     height: auto;
     padding:100px 150px 0 150px;
     .row{
-        h3, h1{
-            text-align: center;
-            margin-bottom: 30px;
-        }
+        // h3, h1{
+        //     text-align: center;
+        //     margin-bottom: 30px;
+        // }
         .col-8{
             a{
                 text-decoration: none;
@@ -239,12 +241,16 @@ nav{
         position: relative;
         color: #fff;
         width: 100%;
-        padding: 50px 100px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .cta{
-            padding-right: 80px;
-            padding-top: 60px;
-            h3, h5{
-                color: #fff;
+            h3{
+                font-size: 3rem;
+            }
+            h5{
+                font-size: 2rem;
             }
             .btn{
                 background-color: #fe0000;
