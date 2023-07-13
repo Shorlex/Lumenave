@@ -1,5 +1,5 @@
 
-@media (min-width: 1421px){
+@media (min-width: 1621px){
     body{
         background-color: #F2F2F2;
     }
@@ -224,6 +224,12 @@
     #service-home, #solution-home{
         .header{
             padding: 20px;
+            h1{
+                font-size: 2.5rem;
+            }
+            h5{
+                font-size: 1.5rem;
+            }
         }
     }
     #overview{

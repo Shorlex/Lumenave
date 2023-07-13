@@ -49,11 +49,11 @@ nav{
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
         &::after{
             content: "";
             height: 100%;
             width: 100%;
-            top: 10vh;
             background-color: #111;
             opacity: .5;
             position: absolute;

@@ -282,6 +282,12 @@ nav{
             z-index: 1;
             position: relative;
         }
+        h1{
+            font-size: 5.2rem;
+        }
+        h5{
+            font-size: 1.5rem;
+        }
     }
     .row{
         padding: 10px 200px;
@@ -547,13 +553,11 @@ nav{
             position: relative;
             z-index: 1;
             color: #fff;
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: center;
-            // align-items: center;
-            h1{
-                font-weight: bolder;
-                font-size: xxx-large;
+            h2{
+                font-size: 5.2rem;
+            }
+            h5{
+                font-size: 1.5rem;
             }
             .btn{
                 background-color: #fe0000;
@@ -698,12 +702,16 @@ nav{
         position: relative;
         color: #fff;
         width: 100%;
-        padding: 50px 100px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .cta{
-            padding-right: 80px;
-            padding-top: 60px;
-            h3, h5{
-                color: #fff;
+            h3{
+                font-size: 3rem;
+            }
+            h5{
+                font-size: 2rem;
             }
             .btn{
                 background-color: #fe0000;
