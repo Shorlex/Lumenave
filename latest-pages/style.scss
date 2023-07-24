@@ -1,0 +1,137 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // font-family: 'Merriweather', serif;
+  p{
+    text-align: justify;
+  }
+}
+
+.row{
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+}
+
+#home {
+  width: 100%;
+  height: 80vh;
+  .header {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &::after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color: black;
+      opacity: 0.5;
+      position: absolute;
+    }
+    .heading {
+      z-index: 1;
+      color: #fff;
+      position: relative;
+      h1{
+        font-size: 3.5rem;
+      }
+      h3{
+        font-size: 2rem;
+      }
+      .btn{
+        color: #fff;
+        background-color: #0095FC;
+      }
+    }
+  }
+}
+
+#navigation{
+    width: 100%;
+    height: 10vh;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px lightgrey;
+    position: sticky;
+    top: 0;
+    .container-fluid{
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      a{
+        color: #111;
+        text-decoration: none;
+        padding: 20px;
+      }
+    }
+}
+
+#grid_1, #grid_2, #grid_3{
+  height: auto;
+  width: 100%;
+  padding: 100px 150px 0 150px;
+  .row{
+    .col-6{
+      img{
+        width: 100%;
+        height: 350px;
+      }
+    }
+    .details{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .title{
+        width: 100%;
+      }
+    }
+    .res-image{
+      display: none;
+    }
+  }
+  .benefits{
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .benefit{
+      width: 380px;
+      height: 400px;
+      padding: 30px 50px;
+      box-shadow: 1px 1px 10px lightgrey;
+      .icon{
+        display: grid;
+        justify-content: center;
+        img{
+          width: 50px;
+          height: 50px;
+        }
+      }
+      .title{
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+#call{
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+}
+
+@import './media';

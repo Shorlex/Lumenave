@@ -49,6 +49,12 @@
     }
 }
 
+@media (max-width: 1280px){
+    #advisory-services, #implementation-services, #outsourcing-services, #managed-services, #it-finance, #it-insure, #private-network, #mobile-network, #internet-services{
+        padding: 100px 20px 0 20px;
+    }
+}
+
 @media (min-width: 1025px){
     #card{
         height: auto;
